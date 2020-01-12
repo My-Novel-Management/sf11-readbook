@@ -12,9 +12,14 @@ from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## assets
 from storybuilder.assets import basic
-## local files
+## settings
 from config import DAYS, ITEMS, LAYERS, PERSONS, RUBIS, STAGES, TIMES, WORDS
-from src.demo.main import ep_demo
+## local files
+from episodes.ghostworld import ep_ghostworld
+from episodes.oldlibrary import ep_old_library
+from episodes.truth import ep_truth
+from episodes.waitinggirl import ep_waiting_girl
+
 
 ## define alias
 W = Writer
@@ -46,17 +51,20 @@ _ = Writer.getWho()
 ## main
 def ch_main(w: World):
     return w.chapter("main",
-            ep_demo(w),
+            ep_ghostworld(w),
+            ep_old_library(w),
+            ep_waiting_girl(w),
+            ep_truth(w),
             )
 
 def create_world():
     """Create a world.
     """
-    w = World("title")
+    w = World("滅びた世界で、本を読む")
     w.setCommonData()
     w.setAssets(basic.ASSET)
     w.buildDB(PERSONS,
-            STAGES, ITEMS, DAYS, TIMES, WORDS,
+            STAGES, DAYS, TIMES, ITEMS, WORDS,
             RUBIS, LAYERS)
     # w.setBaseDate()
     # set textures
