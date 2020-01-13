@@ -66,7 +66,8 @@ def create_world():
     w.buildDB(PERSONS,
             STAGES, DAYS, TIMES, ITEMS, WORDS,
             RUBIS, LAYERS)
-    # w.setBaseDate()
+    w.setBaseDate(2108)
+    w.setColumnRow(40,40)
     # set textures
     # w.entryBlock()
     # w.entryHistory()
