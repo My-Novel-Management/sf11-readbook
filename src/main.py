@@ -11,9 +11,9 @@ sys.path.append('storybuilder')
 from storybuilder.builder.world import World
 from storybuilder.builder.writer import Writer
 ## assets
-from storybuilder.assets import basic
+from storybuilder.assets import basic, accessory
 ## settings
-from config import DAYS, ITEMS, LAYERS, PERSONS, RUBIS, STAGES, TIMES, WORDS
+from config import PERSONS, AREAS, STAGES, DAYS, TIMES, ITEMS, WORDS, RUBIS, LAYERS
 ## local files
 from episodes.ghostworld import ep_ghostworld
 from episodes.oldlibrary import ep_old_library
@@ -63,15 +63,18 @@ def create_world():
     w = World("滅びた世界で、本を読む")
     w.setCommonData()
     w.setAssets(basic.ASSET)
+    w.setAssets(accessory.ASSET)
     w.buildDB(PERSONS,
-            STAGES, DAYS, TIMES, ITEMS, WORDS,
+            AREAS, STAGES, DAYS, TIMES, ITEMS, WORDS,
             RUBIS, LAYERS)
     w.setBaseDate(2108)
-    w.setColumnRow(40,40)
+    w.setBaseArea("Jakarta")
+    w.setColumnRow(42,34)
     # set textures
     # w.entryBlock()
     # w.entryHistory()
     # w.entryLifeNote()
+    w.setOutline("滅びた世界で、調査していた")
     return w
 
 

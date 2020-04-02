@@ -35,6 +35,11 @@ PERSONS = (
         ("andre", "アンドレ", "ヤン,アンドレ", 40, (1,1), "male", "宇宙飛行士", "me:私"),
         )
 
+AREAS = (
+        # Tag / 名前 / x,y / 備考
+        ("Jakarta", "ジャカルタ", 10684,-620),
+        )
+
 STAGES = (
         # Tag / 名前 / 紹介
         ("library", "図書館"),
@@ -62,7 +67,7 @@ WORDS = (
         )
 
 RUBIS = (
-        # Base / Rubi / Type
+        # Base / Rubi / Except / Type
         )
 
 LAYERS = (

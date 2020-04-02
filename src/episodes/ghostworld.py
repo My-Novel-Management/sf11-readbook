@@ -50,6 +50,10 @@ def sc_perished_world(w: World):
             yuri.talk("クド、あの建物にしよう", "たぶん学校だ"),
             _.do("丘になっているところに二階建ての生き残りを見つけた",
                 "屋上に大量の太陽光パネルが整列していたがところどころ欠けている", "校庭だったと思われる広大な敷地は様々な草木で覆われていたが、まだ森にはなっていなかった"),
+            camera=w.yuri,
+            area=w.Jakarta,
+            stage=w.on_street,
+            day=w.in_visittown, time=w.at_afternoon,
             )
 
 def sc_old_school(w: World):
