@@ -15,10 +15,10 @@ from storybuilder.assets import basic, accessory
 ## settings
 from config import PERSONS, AREAS, STAGES, DAYS, TIMES, ITEMS, WORDS, RUBIS, LAYERS
 ## local files
-from episodes.ghostworld import ep_ghostworld
-from episodes.oldlibrary import ep_old_library
-from episodes.truth import ep_truth
-from episodes.waitinggirl import ep_waiting_girl
+from episodes.e1_ghostworld import ep_ghostworld
+from episodes.e2_oldlibrary import ep_old_library
+from episodes.e3_waitinggirl import ep_waiting_girl
+from episodes.e4_truth import ep_truth
 
 
 ## define alias
@@ -27,23 +27,10 @@ _ = Writer.getWho()
 
 ################################################################
 #
-# Sample step:
-# 1) Create the world
-#       世界を作成する。
-# 2) Create a new chapter
-#       章の作成。
-# 3) Create a episode
-#       エピソード作成。
-# 4) Create a new scene
-#       シーン作成。物語のベース。ここに様々なActionを追加する。
-# 5) Create a new stage
-#       舞台作成。シーンに必須要素
-# 6) Create a new day and time
-#       日時作成。シーンのサブ要素
-# 7) Add a scene plot
-#       シーンプロットの作成。概要のないシーンは原則使えない
-# 8) Add scene actions
-#       シーンアクションの追加。
+#   1. 滅びた世界
+#   2. 図書館の女性
+#   3. 待つこと
+#   4. 記録士の仕事
 #
 ################################################################
 

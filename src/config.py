@@ -42,9 +42,10 @@ AREAS = (
 
 STAGES = (
         # Tag / 名前 / 紹介
-        ("library", "図書館"),
-        ("highschool", "高校"),
-        ("mosque", "モスク"),
+        ("library", "図書館", "Jakarta"),
+        ("highschool", "高校", "Jakarta"),
+        ("classroom", "教室"),
+        ("mosque", "モスク", "Jakarta"),
         )
 
 DAYS = (
@@ -64,6 +65,10 @@ ITEMS = (
 
 WORDS = (
         # Tag / 名前 / 紹介
+        ("archiver", "記録士"),
+        ("cemargur", "セマルグル", "記録士を管理する中央機関"),
+        ("ghost", "霊的回路現象"),
+        ("walpurgis", "ヴァルプルギスの火"),
         )
 
 RUBIS = (
