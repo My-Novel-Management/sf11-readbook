@@ -61,6 +61,7 @@ TIMES = (
 
 ITEMS = (
         # Tag / 名前 / 紹介
+        ("energy", "エネルギィ"),
         )
 
 WORDS = (
